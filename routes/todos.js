@@ -19,7 +19,7 @@ router.get("/todo", async (ctx) => {
         //om  inga todos finns
         if (todos.length < 1) {
             ctx.status = 400; // Bad Request
-            ctx.message = "Inget att göra" //meddelande
+            ctx.message = "Inga todos" //meddelande
         } else {
             ctx.body = todos; //annars visar
 

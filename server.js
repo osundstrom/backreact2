@@ -35,8 +35,6 @@ app.use(bodyParser());
 
 app.use(router.routes());
 
-//app.use(router.allowedMethods());
-
 //---------------------------Ansluter----------------------------------//
 
 mongoose.connect(process.env.URL)

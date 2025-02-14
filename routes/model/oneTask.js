@@ -2,17 +2,17 @@
 //mongoose
 const mongoose = require("mongoose");
 
-//schema för en film
+//schema för en todo
 const todoSchema = new mongoose.Schema({
     title: { //titel på todo
         type: String,
         required: true, //måste
     },
-    description: { //Betyg från IMDB
+    description: {
         type: String,
         required: true,  //måste
     },
-    status: { //Om man sett den
+    status: { 
         type: String,
         required: true,  //måste
     }
